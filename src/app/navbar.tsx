@@ -13,16 +13,16 @@ const Navbar = () => {
                         <div className={"mx-5"}>
                             <ul className={"flex flex-row gap-10 text-lg font-medium"}>
                                 <Link href={"/"}>
-                                    <li className={"cursor-pointer"}>// Home</li>
+                                    <li className={"cursor-pointer"}>{"// Home"}</li>
                                 </Link>
                                 <Link href={"/about"}>
-                                    <li className={"cursor-pointer"}>// About me</li>
+                                    <li className={"cursor-pointer"}>{"// About me"}</li>
                                 </Link>
                                 <Link href={"/projects"}>
-                                    <li className={"cursor-pointer"}>// Projects</li>
+                                    <li className={"cursor-pointer"}>{"// Projects"}</li>
                                 </Link>
                                 <Link href={"/contact"}>
-                                    <li className={"cursor-pointer"}>// Contact</li>
+                                    <li className={"cursor-pointer"}>{"// Contact"}</li>
                                 </Link>
                             </ul>
                         </div>
