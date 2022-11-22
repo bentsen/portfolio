@@ -1,6 +1,9 @@
 'use client'
 
 import {useRef} from "react";
+import Projects from "./Projects";
+import Expertise from "./Expertise";
+import Image from "next/image";
 
 const Page = () => {
 
@@ -16,7 +19,7 @@ const Page = () => {
 
     return(
         <>
-            <div className={"w-full"}>
+            <div className={"w-full h-auto"}>
                 <section className={"bg-[url('/background.png')] bg-center bg-cover h-screen"}>
                     <div className={"h-full w-full bg-gradient-to-b from-overlay1 to-overlay2 absolute top-0 left-0 pointer-events-none"}></div>
                     <div className={"h-full p-20 ml-auto mr-auto"}>
@@ -45,8 +48,16 @@ const Page = () => {
                     </div>
                 </section>
                 <section ref={secondPage} className={"h-screen"}>
-                    <div className={"bg-bgcolor h-full"}>
-
+                    <div className={"h-full relative"}>
+                        <div className={"h-1/2 w-full bg-gradient-to-t from-overlay1 to-overlay2 absolute top-0 left-0 pointer-events-none -z-10"}></div>
+                        <Image className={"absolute left-0 top-0 -z-20 opacity-10"} src={"/binary.png"} alt={"binary"} fill/>
+                        <div className={"h-1/2 w-full bg-gradient-to-b from-overlay1 to-overlay2 absolute top-[50%] left-0 pointer-events-none -z-10"}></div>
+                        <Expertise/>
+                    </div>
+                </section>
+                <section className={"h-auto"}>
+                    <div className={"h-full relative mt-10"}>
+                        <Projects/>
                     </div>
                 </section>
             </div>

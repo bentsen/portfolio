@@ -9,6 +9,9 @@ module.exports = {
         overlay1: '#00000012',
         overlay2: 'rgb(26, 25, 29)',
         bgcolor: 'rgb(26, 25, 29)',
+        bgcolor2: 'rgb(32, 31, 35)',
+        java: '#b07219',
+        typescript: '#3178c6',
       }
     },
   },
