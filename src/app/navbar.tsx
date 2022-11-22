@@ -8,25 +8,27 @@ const Navbar = () => {
                 <div className={"flex flex-row h-full"}>
                     <div className={"flex justify-between items-center text-white h-full w-full px-7"}>
                         <div className={"block"}>
-                            <h1 className={"text-3xl cursor-pointer"}>Mikkel</h1>
+                            <Link href={"/"}>
+                                <h1 className={"text-3xl"}>Mikkel</h1>
+                            </Link>
                         </div>
                         <div className={"mx-5"}>
                             <ul className={"flex flex-row gap-10 text-lg font-medium"}>
                                 <Link href={"/"}>
-                                    <li className={"cursor-pointer"}>{"// Home"}</li>
+                                    <li>{"// Home"}</li>
                                 </Link>
                                 <Link href={"/about"}>
-                                    <li className={"cursor-pointer"}>{"// About me"}</li>
+                                    <li>{"// About me"}</li>
                                 </Link>
                                 <Link href={"/projects"}>
-                                    <li className={"cursor-pointer"}>{"// Projects"}</li>
+                                    <li>{"// Projects"}</li>
                                 </Link>
                                 <Link href={"/contact"}>
-                                    <li className={"cursor-pointer"}>{"// Contact"}</li>
+                                    <li>{"// Contact"}</li>
                                 </Link>
                             </ul>
                         </div>
-                        <div></div>
+                        <div className={""}></div>
                     </div>
                 </div>
             </nav>

@@ -1,10 +1,14 @@
-const About = () => {
+const Page = () => {
 
     return(
         <>
+            <div className={""}>
+                <section>
 
+                </section>
+            </div>
         </>
     )
 }
 
-export default About
+export default Page
