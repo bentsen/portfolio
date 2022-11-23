@@ -1,10 +1,26 @@
+'use client'
+
 import Link from "next/link";
+import {useEffect, useState} from "react";
 
 const Navbar = () => {
+    const [scroll, setScroll] = useState(false)
+    const onScroll = () => {
+        if (window.scrollY >= 40) {
+            setScroll(true)
+        } else {
+            setScroll(false)
+        }
+    }
+
+    useEffect(() => {
+        onScroll()
+        window.addEventListener("scroll", onScroll)
+    })
 
     return(
         <>
-            <nav className={"w-full h-20 absolute"}>
+            <nav className={"w-full h-20 absolute border-b " + (scroll ? "border-gray-500 backdrop-blur-md duration-300 transition-all" : "border-transparent")}>
                 <div className={"flex flex-row h-full"}>
                     <div className={"flex justify-between items-center text-white h-full w-full px-10"}>
                         <div className={"block"}>

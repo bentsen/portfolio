@@ -35,8 +35,8 @@ const Projects = () => {
                                <Image className={"rounded-t-md group-hover:scale-[1.15] transition-all duration-300"} src={"/projects-images/wow.png"} alt={"velkoz"} fill/>
                            </div>
                            <div className={"bg-bgcolor2 h-1/4 rounded-b-md flex flex-row"}>
-                               <div className={"pl-10 pt-5 w-3/4"}>
-                                   <h3 className={"text-2xl text-white font-bold"}>Wow Mount Viewer</h3>
+                               <div className={"pl-10 pt-5 w-1/2"}>
+                                   <h3 className={"text-2xl text-white font-bold"}>Wow Mount</h3>
                                    <div className={"text-gray-500 group-hover:-translate-y-7 group-hover:opacity-0 transition-all duration-200"}>
                                        <span className={""}>Web Development</span>
                                    </div>
@@ -44,7 +44,7 @@ const Projects = () => {
                                        <span className={""}>Show Project</span>
                                    </div>
                                </div>
-                               <div className={"w-1/4 flex justify-end items-center text-white flex-row gap-2 pr-2"}>
+                               <div className={"w-1/2 flex justify-end items-center text-white flex-row gap-2 pr-10"}>
                                    <div className={"rounded-full bg-typescript w-2 h-2"}></div>
                                    Typescript
                                </div>

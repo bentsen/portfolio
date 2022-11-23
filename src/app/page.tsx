@@ -26,7 +26,7 @@ const Page = () => {
                         <div className={"sun left-[56%] top-[17%] absolute will-change-transform"}></div>
                         <div className={"flex justify-center pt-52 h-full"}>
                             <div className={"flex flex-col gap-5"}>
-                                <h1 className={"text-[5vw] text-white font-bold uppercase text-center"}>Hey, i am Mikkel Bentsen</h1>
+                                <h1 className={"text-[5vw] text-white font-bold uppercase text-center"}>Hey, i&apos;am Mikkel Bentsen</h1>
                                 <h3 className={"text-3xl text-white font-medium uppercase text-center"}>Software Engineer, Full-stack web developer</h3>
                             </div>
                             <div onClick={() => handleScroll(secondPage)} className={"animate-bounce cursor-pointer absolute bottom-10 left-1/2 cursor-pointer"}>
