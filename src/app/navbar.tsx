@@ -34,7 +34,7 @@ const Navbar = () => {
                                     <li>{"// Home"}</li>
                                 </Link>
                                 <Link href={"/about"}>
-                                    <li>{"// About me"}</li>
+                                    <li>{"// Expertise"}</li>
                                 </Link>
                                 <Link href={"/projects"}>
                                     <li>{"// Projects"}</li>

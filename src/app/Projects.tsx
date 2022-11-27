@@ -93,17 +93,21 @@ const Projects = () => {
                            </div>
                            <div className={"w-[820px] h-[600px] flex flex-col cursor-pointer group col-span-2 row-span-2"}>
                                <div className={"h-[80%] relative overflow-hidden"}>
-                                   <Image className={"rounded-t-md group-hover:scale-[1.15] transition-all duration-300"} src={"/projects-images/velkoz.png"} alt={"velkoz"} fill/>
+                                   <Image className={"rounded-t-md group-hover:scale-[1.15] transition-all duration-300"} src={"/projects-images/pokebattle.png"} alt={"velkoz"} fill/>
                                </div>
-                               <div className={"bg-bgcolor2 h-[20%] rounded-b-md"}>
-                                   <div className={"pl-10 pt-5"}>
-                                       <h3 className={"text-2xl text-white font-bold"}>Velkoz</h3>
+                               <div className={"bg-bgcolor2 h-[20%] rounded-b-md flex flex-rows"}>
+                                   <div className={"pl-10 pt-5 w-1/2"}>
+                                       <h3 className={"text-2xl text-white font-bold"}>Poke Battle</h3>
                                        <div className={"text-gray-500 group-hover:-translate-y-7 group-hover:opacity-0 transition-all duration-200"}>
-                                           <span className={""}>Web Development</span>
+                                           <span className={""}>Machine Learning</span>
                                        </div>
                                        <div className={"text-gray-500 group-hover:-translate-y-7 opacity-0 group-hover:opacity-100 transition-all duration-200"}>
                                            <span className={""}>Show Project</span>
                                        </div>
+                                   </div>
+                                   <div className={"w-1/2 flex justify-end items-center text-white flex-row gap-2 pr-10"}>
+                                       <div className={"rounded-full bg-python w-2 h-2"}></div>
+                                       Python
                                    </div>
                                </div>
                            </div>

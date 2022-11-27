@@ -12,6 +12,7 @@ module.exports = {
         bgcolor2: 'rgb(32, 31, 35)',
         java: '#b07219',
         typescript: '#3178c6',
+        python: '#2e74a2',
       },
       fontFamily: {
         sans: ['Lato', 'sans-serif']
