@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 const Projects = () => {
 
@@ -12,7 +13,9 @@ const Projects = () => {
                    <div className={"mt-14 flex flex-wrap gap-5 w-full"}>
                        <div className={"w-[400px] h-96 flex flex-col cursor-pointer group"}>
                             <div className={"h-3/4 relative overflow-hidden"}>
-                                <Image className={"rounded-t-md group-hover:scale-[1.15] transition-all duration-300"} src={"/projects-images/velkoz.png"} alt={"velkoz"} fill/>
+                                <a target={"_blank"} href={"https://velkoz.lol/"} rel={"noopener noreferrer"}>
+                                    <Image className={"rounded-t-md group-hover:scale-[1.15] transition-all duration-300"} src={"/projects-images/velkoz.png"} alt={"velkoz"} fill/>
+                                </a>
                             </div>
                            <div className={"bg-bgcolor2 h-1/4 rounded-b-md flex flex-row"}>
                                 <div className={"pl-10 pt-5 w-1/2"}>
@@ -32,7 +35,9 @@ const Projects = () => {
                        </div>
                        <div className={"w-[400px] h-96 flex flex-col cursor-pointer group"}>
                            <div className={"h-3/4 relative overflow-hidden"}>
-                               <Image className={"rounded-t-md group-hover:scale-[1.15] transition-all duration-300"} src={"/projects-images/wow.png"} alt={"velkoz"} fill/>
+                               <a target={"_blank"} href="https://mount-viewer.vercel.app/" rel={"noopener noreferrer"}>
+                                   <Image className={"rounded-t-md group-hover:scale-[1.15] transition-all duration-300"} src={"/projects-images/wow.png"} alt={"wow"} fill/>
+                               </a>
                            </div>
                            <div className={"bg-bgcolor2 h-1/4 rounded-b-md flex flex-row"}>
                                <div className={"pl-10 pt-5 w-1/2"}>
@@ -52,7 +57,9 @@ const Projects = () => {
                        </div>
                        <div className={"w-[400px] h-96 flex flex-col cursor-pointer group"}>
                            <div className={"h-3/4 relative overflow-hidden"}>
-                               <Image className={"rounded-t-md group-hover:scale-[1.15] transition-all duration-300"} src={"/projects-images/fog.png"} alt={"velkoz"} fill/>
+                               <a target={"_blank"} href="https://www.youtube.com/watch?v=s4ZZxXwC4wo" rel={"noopener noreferrer"}>
+                                   <Image className={"rounded-t-md group-hover:scale-[1.15] transition-all duration-300"} src={"/projects-images/fog.png"} alt={"fog"} fill/>
+                               </a>
                            </div>
                            <div className={"bg-bgcolor2 h-1/4 rounded-b-md flex flex-row"}>
                                <div className={"pl-10 pt-5 w-1/2"}>
@@ -93,7 +100,9 @@ const Projects = () => {
                            </div>
                            <div className={"w-[820px] h-[600px] flex flex-col cursor-pointer group col-span-2 row-span-2"}>
                                <div className={"h-[80%] relative overflow-hidden"}>
-                                   <Image className={"rounded-t-md group-hover:scale-[1.15] transition-all duration-300"} src={"/projects-images/pokebattle.png"} alt={"velkoz"} fill/>
+                                   <a target={"_blank"} href={"https://poke-battle-psi.vercel.app/"} rel={"noopener noreferrer"}>
+                                       <Image className={"rounded-t-md group-hover:scale-[1.15] transition-all duration-300"} src={"/projects-images/pokebattle.png"} alt={"pokemon"} fill/>
+                                   </a>
                                </div>
                                <div className={"bg-bgcolor2 h-[20%] rounded-b-md flex flex-rows"}>
                                    <div className={"pl-10 pt-5 w-1/2"}>
@@ -115,7 +124,7 @@ const Projects = () => {
                        <div className={"w-[400px] h-auto flex flex-col gap-5"}>
                            <div className={"w-[400px] h-96 flex flex-col cursor-pointer group"}>
                                <div className={"h-3/4 relative overflow-hidden"}>
-                                   <Image className={"rounded-t-md group-hover:scale-[1.15] transition-all duration-300"} src={"/projects-images/fishingfriend.png"} alt={"velkoz"} fill/>
+                                   <Image className={"rounded-t-md group-hover:scale-[1.15] transition-all duration-300"} src={"/projects-images/fishingfriend.png"} alt={"fishingFriend"} fill/>
                                </div>
                                <div className={"bg-bgcolor2 h-1/4 rounded-b-md flex flex-row"}>
                                    <div className={"pl-10 pt-5 w-1/2"}>
