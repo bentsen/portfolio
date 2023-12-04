@@ -4,7 +4,10 @@ import Navbar from "./Navbar";
 import Footer from "./footer";
 import { Lato } from "next/font/google";
 
-const lato = Lato({ weight: ["100", "300", "400", "700", "900"] });
+const lato = Lato({
+  weight: ["100", "300", "400", "700", "900"],
+  subsets: ["latin"],
+});
 
 export const metadata: Metadata = {
   title: "Mikkel Bengtsen",
