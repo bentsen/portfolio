@@ -10,7 +10,7 @@ const Expertise = () => {
         <div className={"flex justify-between w-3/4 pt-10"}>
           <div
             className={
-              "w-1/3 border-t-2 border-l-2 border-b-2 border-white p-5 pt-10 pb-10"
+              "w-1/3 border-t-2 border-l-2 border-b-2 border-neutral-700 p-5 pt-10 pb-10"
             }
           >
             <div className={"flex flex-row items-center gap-2"}>
@@ -44,7 +44,7 @@ const Expertise = () => {
           </div>
           <div
             className={
-              "w-1/3 border-l border-t-2 border-b-2 border-white p-5 pt-10 pb-10"
+              "w-1/3 border-l border-t-2 border-b-2 border-neutral-700 p-5 pt-10 pb-10"
             }
           >
             <div className={"flex flex-row items-center gap-2"}>
@@ -79,7 +79,7 @@ const Expertise = () => {
           </div>
           <div
             className={
-              "w-1/3 border-l border-t-2 border-b-2 border-r-2 border-white p-5 pt-10 pb-10"
+              "w-1/3 border-l border-t-2 border-b-2 border-r-2 border-neutral-700 p-5 pt-10 pb-10"
             }
           >
             <div className={"flex flex-row items-center gap-2"}>
