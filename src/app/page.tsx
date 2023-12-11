@@ -4,6 +4,7 @@ import { useRef } from "react";
 import Projects from "./Projects";
 import Expertise from "./Expertise";
 import Image from "next/image";
+import Contact from "./Contact";
 
 const Page = () => {
   const secondPage = useRef(null);
@@ -52,7 +53,7 @@ const Page = () => {
             <div
               onClick={() => handleScroll(secondPage)}
               className={
-                "animate-bounce cursor-pointer absolute bottom-10 left-1/2 cursor-pointer"
+                "animate-bounce cursor-pointer absolute bottom-10 left-1/2"
               }
             >
               <svg
@@ -98,6 +99,9 @@ const Page = () => {
         <div className={"h-full relative mt-10"}>
           <Projects />
         </div>
+      </section>
+      <section className="pb-32" id="contact">
+        <Contact />
       </section>
     </div>
   );

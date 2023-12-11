@@ -40,7 +40,7 @@ const Navbar = () => {
           </div>
           <div className={"mx-5"}>
             <ul className={"flex flex-row gap-10 text-lg font-medium"}>
-              <Link href={"#"}>
+              <Link href={"/"}>
                 <li>{"// Home"}</li>
               </Link>
               <a href="/#expertise">
@@ -49,7 +49,7 @@ const Navbar = () => {
               <a href={"/#projects"}>
                 <li>{"// Projects"}</li>
               </a>
-              <Link href={"/contact"}>
+              <Link href={"/#contact"}>
                 <li>{"// Contact"}</li>
               </Link>
             </ul>

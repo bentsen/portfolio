@@ -67,9 +67,10 @@ const Expertise = () => {
               <div className={"pl-3 pt-1 pb-1"}>
                 <div className={"border-l-2 border-gray-500 pl-2 font-medium"}>
                   <p>
-                    I feel at home in the React ecosystem. It fits my thought
-                    process and work process perfectly. I primarily use the
-                    frameworks Next and Remix.
+                    I began coding with Java and frequently used it for creating
+                    APIs. However, I later developed a strong preference for
+                    TypeScript and have since been exclusively using it
+                    alongside the Express framework.
                   </p>
                 </div>
               </div>
@@ -91,8 +92,8 @@ const Expertise = () => {
                 />
               </div>
               <div className={"text-white text-3xl font-bold"}>
-                <h3>Frontend</h3>
-                <span>React, NextJS</span>
+                <h3>Hosting & CI/CD</h3>
+                <span>Digital Ocean</span>
                 <hr className={"border-none h-2 bg-pink-400"} />
               </div>
             </div>
@@ -101,9 +102,10 @@ const Expertise = () => {
               <div className={"pl-3 pt-1 pb-1"}>
                 <div className={"border-l-2 border-gray-500 pl-2 font-medium"}>
                   <p>
-                    I feel at home in the React ecosystem. It fits my thought
-                    process and work process perfectly. I primarily use the
-                    frameworks Next and Remix.
+                    When i am working on projects for school i mostly deploy on
+                    vercel for an easy and quiock deployment. For my more
+                    professional projects i use Digital Ocean for hosting and
+                    Github Actions for CI/CD.
                   </p>
                 </div>
               </div>
