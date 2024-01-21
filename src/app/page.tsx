@@ -19,58 +19,32 @@ const Page = () => {
 
   return (
     <div className={"w-full h-auto"}>
-      <section
-        className={"bg-[url('/background.png')] bg-center bg-cover h-screen"}
-      >
+      <section className="h-screen">
+        <div className="bg-[url('/bg.png')] bg-center bg-cover h-full animate-[pulse_4s_infinite]" />
         <div
           className={
             "h-full w-full bg-gradient-to-b from-overlay1 to-overlay2 absolute top-0 left-0 pointer-events-none"
           }
         ></div>
-        <div className={"h-full p-20 ml-auto mr-auto"}>
-          <div
-            className={
-              "sun left-[56%] top-[17%] absolute will-change-transform"
-            }
-          ></div>
-          <div className={"flex justify-center pt-52 h-full"}>
-            <div className={"flex flex-col gap-5"}>
-              <h1
-                className={
-                  "text-[5vw] text-white font-bold uppercase text-center"
-                }
-              >
-                Hey, i&apos;am Mikkel Bentsen
-              </h1>
-              <h3
-                className={
-                  "text-3xl text-white font-medium uppercase text-center"
-                }
-              >
-                Software Engineer, Full-stack web developer
-              </h3>
-            </div>
-            <div
-              onClick={() => handleScroll(secondPage)}
+        <div
+          style={{ transform: "translate(-50%, -50%)" }}
+          className="absolute left-1/2 top-1/2 w-full"
+        >
+          <div className={"flex flex-col gap-5"}>
+            <h1
               className={
-                "animate-bounce cursor-pointer absolute bottom-10 left-1/2"
+                "text-[5vw] text-white font-bold uppercase text-center"
               }
             >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                strokeWidth="1.5"
-                stroke="currentColor"
-                className="w-6 h-6 text-white"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M19.5 8.25l-7.5 7.5-7.5-7.5"
-                />
-              </svg>
-            </div>
+              Hey, i&apos;m Mikkel Bentsen
+            </h1>
+            <h3
+              className={
+                "text-3xl text-white font-medium uppercase text-center"
+              }
+            >
+              Software Engineer, Full-stack web developer
+            </h3>
           </div>
         </div>
       </section>
