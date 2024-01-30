@@ -4,7 +4,7 @@ import Image from "next/image";
 const Footer = () => {
   return (
     <div className="h-56 bg-zinc-900 flex flex-col items-center justify-center">
-      <div className="w-full max-w-[1136px] block">
+      <div className="w-full md:max-w-[1136px] block">
         <section>
           <footer className="grid grid-cols-4 pb-[calc(64px * 1)] gap-y-[calc(12px * 1)] gap-x-[calc(40px * 1)] auto-cols-auto">
             <div className="text-zinc-400">

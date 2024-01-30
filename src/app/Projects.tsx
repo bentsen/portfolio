@@ -12,11 +12,61 @@ const getLanguageColor = (language: string) => {
 const Projects = () => {
   return (
     <div className={""}>
-      <div className={"mx-auto my-0 w-[1333px] flex flex-col items-center"}>
-        <div className={"text-left w-full"}>
-          <h1 className={"text-5xl text-white"}>My Projects</h1>
+      <div className={"mx-auto my-0 md:w-[1333px] flex flex-col items-center"}>
+        <div className={"md:text-left text-center w-full"}>
+          <h1 className={"md:text-5xl text-4xl text-white"}>My Projects</h1>
         </div>
-        <div className={"mt-14 flex flex-wrap gap-5 w-full"}>
+        <div className="mt-14 flex flex-col gap-5 w-full px-2">
+          <SmallProject
+            name="velkoz"
+            description="Web Development"
+            image="/projects-images/velkoz.png"
+            language="typescript"
+          />
+          <SmallProject
+            name="Wow Mount"
+            description="Web Development"
+            image="/projects-images/wow.png"
+            language="typescript"
+          />
+          <SmallProject
+            name="Fog"
+            description="Web Development"
+            image="/projects-images/fog.png"
+            language="java"
+          />
+          <SmallProject
+            name="WowDethBets"
+            description="Web Development"
+            image="/projects-images/wowdeathbets.png"
+            language="typescript"
+          />
+          <SmallProject
+            name="Poke Battle"
+            description="Machine Learning / Web Development"
+            image="/projects-images/pokebattle.png"
+            language="python"
+          />
+          <SmallProject
+            name="Fishing Friend"
+            description="Bot"
+            image="/projects-images/fishingfriend.png"
+            language="java"
+          />
+          <SmallProject
+            name="Tagfat"
+            description="Web Development"
+            image="/projects-images/tagfat.png"
+            language="typescript"
+          />
+          <SmallProject
+            name="Velkoz"
+            description="Web Development"
+            image="/projects-images/velkoz.png"
+            language="typescript"
+          />
+        </div>
+        <div className={"mt-14 hidden md:flex flex-wrap gap-5 w-full"}>
           <div className="flex flex-row gap-5">
             <SmallProject
               name="velkoz"
@@ -88,7 +138,9 @@ const SmallProject = (props: ProjectProps) => {
   const { name, description, image, language } = props;
 
   return (
-    <div className={"w-[400px] h-96 flex flex-col cursor-pointer group"}>
+    <div
+      className={"md:w-[400px] w-full h-96 flex flex-col cursor-pointer group"}
+    >
       <div className={"h-3/4 relative overflow-hidden"}>
         <Image
           className={

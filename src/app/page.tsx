@@ -27,7 +27,7 @@ const Page = () => {
             "h-full w-full bg-gradient-to-b from-overlay1 to-overlay2 absolute top-0 left-0 pointer-events-none"
           }
         ></div>
-        <div className="absolute left-1/2 bottom-3">
+        <div className="absolute left-1/2 md:bottom-4 bottom-6">
           <ChevronDownIcon
             onClick={() => handleScroll(secondPage)}
             className="text-white w-8 h-8 animate-bounce cursor-pointer"
@@ -40,10 +40,13 @@ const Page = () => {
           <div className={"flex flex-col gap-5"}>
             <h1
               className={
-                "md:text-[5vw] text-2xl text-white font-bold uppercase text-center"
+                "text-[5vw] md:block hidden text-white font-bold uppercase text-center"
               }
             >
               Hey, i&apos;m Mikkel Bentsen
+            </h1>
+            <h1 className="text-4xl md:hidden text-white font-bold uppercase text-center">
+              Mikkel Bentsen
             </h1>
             <h3
               className={
