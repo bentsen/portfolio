@@ -3,16 +3,12 @@ import Image from "next/image";
 const Expertise = () => {
   return (
     <div className={"pt-24"}>
-      <div className={"mx-auto my-0 w-[1333px] flex flex-col items-center"}>
+      <div className={"mx-auto my-0 md:w-[1333px] flex flex-col items-center"}>
         <div>
-          <h1 className={"text-white text-6xl"}>My Expertise</h1>
+          <h1 className={"text-white md:text-6xl text-4xl"}>My Expertise</h1>
         </div>
-        <div className={"flex justify-between w-3/4 pt-10"}>
-          <div
-            className={
-              "w-1/3 border-t-2 border-l-2 border-b-2 border-neutral-700 p-5 pt-10 pb-10"
-            }
-          >
+        <div className={"flex flex-col gap-2 md:gap-0 md:flex-row w-3/4 pt-10"}>
+          <ExpertisePanel>
             <div className={"flex flex-row items-center gap-2"}>
               <div>
                 <Image
@@ -41,12 +37,8 @@ const Expertise = () => {
               </div>
               <div className={"text-gray-500"}>{"<p/>"}</div>
             </div>
-          </div>
-          <div
-            className={
-              "w-1/3 border-l border-t-2 border-b-2 border-neutral-700 p-5 pt-10 pb-10"
-            }
-          >
+          </ExpertisePanel>
+          <ExpertisePanel>
             <div className={"flex flex-row items-center gap-2"}>
               <div>
                 <Image
@@ -76,12 +68,8 @@ const Expertise = () => {
               </div>
               <div className={"text-gray-500"}>{"<p/>"}</div>
             </div>
-          </div>
-          <div
-            className={
-              "w-1/3 border-l border-t-2 border-b-2 border-r-2 border-neutral-700 p-5 pt-10 pb-10"
-            }
-          >
+          </ExpertisePanel>
+          <ExpertisePanel>
             <div className={"flex flex-row items-center gap-2"}>
               <div>
                 <Image
@@ -111,11 +99,11 @@ const Expertise = () => {
               </div>
               <div className={"text-gray-500"}>{"<p/>"}</div>
             </div>
-          </div>
+          </ExpertisePanel>
         </div>
         <div className={"pt-20 flex flex-col"}>
           <div>
-            <h1 className={"text-3xl text-white font-bold"}>
+            <h1 className={"md:text-3xl text-2xl text-white font-bold"}>
               What I use for development
             </h1>
           </div>
@@ -159,6 +147,18 @@ const Expertise = () => {
           </div>
         </div>
       </div>
+    </div>
+  );
+};
+
+const ExpertisePanel = ({ children }: { children: React.ReactNode }) => {
+  return (
+    <div
+      className={
+        "md:w-1/3 h-auto border-y-2 border-x md:border-r-0 md:first:border-l-2 md:last:border-r-2 border-neutral-700 p-5 md:pt-10 md:pb-10"
+      }
+    >
+      {children}
     </div>
   );
 };

@@ -5,6 +5,7 @@ import Projects from "./Projects";
 import Expertise from "./Expertise";
 import Image from "next/image";
 import Contact from "./Contact";
+import { ChevronDownIcon } from "@radix-ui/react-icons";
 
 const Page = () => {
   const secondPage = useRef(null);
@@ -26,6 +27,12 @@ const Page = () => {
             "h-full w-full bg-gradient-to-b from-overlay1 to-overlay2 absolute top-0 left-0 pointer-events-none"
           }
         ></div>
+        <div className="absolute left-1/2 bottom-3">
+          <ChevronDownIcon
+            onClick={() => handleScroll(secondPage)}
+            className="text-white w-8 h-8 animate-bounce cursor-pointer"
+          />
+        </div>
         <div
           style={{ transform: "translate(-50%, -50%)" }}
           className="absolute left-1/2 top-1/2 w-full"
@@ -33,14 +40,14 @@ const Page = () => {
           <div className={"flex flex-col gap-5"}>
             <h1
               className={
-                "text-[5vw] text-white font-bold uppercase text-center"
+                "md:text-[5vw] text-2xl text-white font-bold uppercase text-center"
               }
             >
               Hey, i&apos;m Mikkel Bentsen
             </h1>
             <h3
               className={
-                "text-3xl text-white font-medium uppercase text-center"
+                "md:text-3xl text-white font-medium uppercase text-center"
               }
             >
               Software Engineer, Full-stack web developer
@@ -48,7 +55,11 @@ const Page = () => {
           </div>
         </div>
       </section>
-      <section ref={secondPage} id={"expertise"} className={"h-screen"}>
+      <section
+        ref={secondPage}
+        id={"expertise"}
+        className={"md:h-screen h-auto"}
+      >
         <div className={"h-full relative"}>
           <div
             className={

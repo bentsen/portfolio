@@ -1,5 +1,6 @@
 "use client";
 
+import { HamburgerMenuIcon } from "@radix-ui/react-icons";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 
@@ -35,10 +36,13 @@ const Navbar = () => {
         >
           <div className={"block"}>
             <Link href={"/"}>
-              <h1 className={"text-3xl"}>Mikkel</h1>
+              <h1 className={"md:text-3xl text-2xl"}>Mikkel</h1>
             </Link>
           </div>
-          <div className={"mx-5"}>
+          <div className="flex justify-end w-full md:hidden">
+            <HamburgerMenuIcon className="w-6 h-6" />
+          </div>
+          <div className={"mx-5 md:block hidden"}>
             <ul className={"flex flex-row gap-10 text-lg font-medium"}>
               <Link href={"/"}>
                 <li>{"// Home"}</li>

@@ -1,5 +1,14 @@
 import Image from "next/image";
 
+const getLanguageColor = (language: string) => {
+  const colors = new Map([
+    ["typescript", "#3178c6"],
+    ["java", "#e76f00"],
+    ["python", "#3776ab"],
+  ]);
+  return colors.get(language);
+};
+
 const Projects = () => {
   return (
     <div className={""}>
@@ -113,7 +122,10 @@ const SmallProject = (props: ProjectProps) => {
             "w-1/2 flex justify-end items-center text-white flex-row gap-2 pr-10"
           }
         >
-          <div className={`rounded-full ${"bg-" + language} w-2 h-2`}></div>
+          <div
+            style={{ backgroundColor: getLanguageColor(language) }}
+            className={`rounded-full w-2 h-2`}
+          ></div>
           {language.charAt(0).toUpperCase() + language.slice(1)}
         </div>
       </div>
@@ -163,7 +175,10 @@ const LargeProject = (props: ProjectProps) => {
             "w-1/2 flex justify-end items-center text-white flex-row gap-2 pr-10"
           }
         >
-          <div className={`rounded-full ${"bg-" + language} w-2 h-2`}></div>
+          <div
+            style={{ backgroundColor: getLanguageColor(language) }}
+            className={"rounded-full w-2 h-2"}
+          ></div>
           {language.charAt(0).toUpperCase() + language.slice(1)}
         </div>
       </div>
