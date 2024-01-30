@@ -16,7 +16,7 @@ const Projects = () => {
         <div className={"md:text-left text-center w-full"}>
           <h1 className={"md:text-5xl text-4xl text-white"}>My Projects</h1>
         </div>
-        <div className="mt-14 flex flex-col gap-5 w-full px-2">
+        <div className="mt-14 md:hidden flex flex-col gap-5 w-full px-2">
           <SmallProject
             name="velkoz"
             description="Web Development"
