@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 const getLanguageColor = (language: string) => {
   const colors = new Map([
@@ -8,6 +9,8 @@ const getLanguageColor = (language: string) => {
   ]);
   return colors.get(language);
 };
+
+const projectList = [];
 
 const Projects = () => {
   return (
@@ -26,7 +29,7 @@ const Projects = () => {
           <SmallProject
             name="Wow Mount"
             description="Web Development"
-            image="/projects-images/wow.png"
+            image="/projects-images/wow_mount.png"
             language="typescript"
           />
           <SmallProject
@@ -36,7 +39,7 @@ const Projects = () => {
             language="java"
           />
           <SmallProject
-            name="WowDethBets"
+            name="WowDeathBets"
             description="Web Development"
             image="/projects-images/wowdeathbets.png"
             language="typescript"
@@ -89,7 +92,7 @@ const Projects = () => {
           </div>
           <div className={"w-[820px] h-[1200px] flex flex-col gap-5"}>
             <LargeProject
-              name="WowDethBets"
+              name="WowDeathBets"
               description="Web Development"
               image="/projects-images/wowdeathbets.png"
               language="typescript"
@@ -138,7 +141,8 @@ const SmallProject = (props: ProjectProps) => {
   const { name, description, image, language } = props;
 
   return (
-    <div
+    <Link
+      href={`/${name.toLowerCase().replace(" ", "-")}`}
       className={"md:w-[400px] w-full h-96 flex flex-col cursor-pointer group"}
     >
       <div className={"h-3/4 relative overflow-hidden"}>
@@ -181,7 +185,7 @@ const SmallProject = (props: ProjectProps) => {
           {language.charAt(0).toUpperCase() + language.slice(1)}
         </div>
       </div>
-    </div>
+    </Link>
   );
 };
 
@@ -189,7 +193,8 @@ const LargeProject = (props: ProjectProps) => {
   const { name, description, image, language } = props;
 
   return (
-    <div
+    <Link
+      href={`/${name.toLowerCase().replace(" ", "-")}`}
       className={
         "w-[820px] h-[600px] flex flex-col cursor-pointer group col-span-2 row-span-2"
       }
@@ -234,7 +239,7 @@ const LargeProject = (props: ProjectProps) => {
           {language.charAt(0).toUpperCase() + language.slice(1)}
         </div>
       </div>
-    </div>
+    </Link>
   );
 };
 
