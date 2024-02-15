@@ -32,7 +32,7 @@ const Projects = () => {
               href="/wow-mount"
               name="Wow Mount"
               description="Web Development"
-              image="/projects-images/wow.png"
+              image="/projects-images/wow-mount.png"
               language="typescript"
             />
             <SmallProject
@@ -55,7 +55,7 @@ const Projects = () => {
               href="/poke-battle"
               name="Poke Battle"
               description="Machine Learning / Web Development"
-              image="/projects-images/pokebattle.png"
+              image="/projects-images/poke-battle.png"
               language="python"
             />
           </div>
@@ -64,7 +64,7 @@ const Projects = () => {
               href="/fishing-friend"
               name="Fishing Friend"
               description="Bot"
-              image="/projects-images/fishingfriend.png"
+              image="/projects-images/fishing-friend.png"
               language="java"
             />
             <SmallProject
