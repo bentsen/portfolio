@@ -101,7 +101,7 @@ const SmallProject = (props: ProjectProps) => {
 
   return (
     <Link
-      href={{ pathname: href }}
+      href={"/"}
       className={"md:w-[400px] w-full h-96 flex flex-col cursor-pointer group"}
     >
       <div className={"h-3/4 relative overflow-hidden"}>
@@ -153,7 +153,7 @@ const LargeProject = (props: ProjectProps) => {
 
   return (
     <Link
-      href={{ pathname: href }}
+      href={"/"}
       className={
         "w-[820px] h-[600px] flex flex-col cursor-pointer group col-span-2 row-span-2"
       }
