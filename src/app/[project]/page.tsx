@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { promises as fs } from "fs";
+import { data } from "../../projects";
 
 type Project = {
   name: string;
@@ -8,8 +8,6 @@ type Project = {
 };
 
 const Project = async ({ params }: { params: { project: string } }) => {
-  const file = await fs.readFile(process.cwd() + "/src/projects.json", "utf-8");
-  const data: Project[] = JSON.parse(file);
   const project: Project | undefined = data.find(
     (p) => p.name === params.project
   );
