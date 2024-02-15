@@ -19,71 +19,24 @@ const Projects = () => {
         <div className={"md:text-left text-center w-full"}>
           <h1 className={"md:text-5xl text-4xl text-white"}>My Projects</h1>
         </div>
-        <div className="mt-14 md:hidden flex flex-col gap-5 w-full px-2">
-          <SmallProject
-            name="velkoz"
-            description="Web Development"
-            image="/projects-images/velkoz.png"
-            language="typescript"
-          />
-          <SmallProject
-            name="Wow Mount"
-            description="Web Development"
-            image="/projects-images/wow_mount.png"
-            language="typescript"
-          />
-          <SmallProject
-            name="Fog"
-            description="Web Development"
-            image="/projects-images/fog.png"
-            language="java"
-          />
-          <SmallProject
-            name="WowDeathBets"
-            description="Web Development"
-            image="/projects-images/wowdeathbets.png"
-            language="typescript"
-          />
-          <SmallProject
-            name="Poke Battle"
-            description="Machine Learning / Web Development"
-            image="/projects-images/pokebattle.png"
-            language="python"
-          />
-          <SmallProject
-            name="Fishing Friend"
-            description="Bot"
-            image="/projects-images/fishingfriend.png"
-            language="java"
-          />
-          <SmallProject
-            name="Tagfat"
-            description="Web Development"
-            image="/projects-images/tagfat.png"
-            language="typescript"
-          />
-          <SmallProject
-            name="Velkoz"
-            description="Web Development"
-            image="/projects-images/velkoz.png"
-            language="typescript"
-          />
-        </div>
         <div className={"mt-14 hidden md:flex flex-wrap gap-5 w-full"}>
           <div className="flex flex-row gap-5">
             <SmallProject
+              href="/velkoz"
               name="velkoz"
               description="Web Development"
               image="/projects-images/velkoz.png"
               language="typescript"
             />
             <SmallProject
+              href="/wow-mount"
               name="Wow Mount"
               description="Web Development"
               image="/projects-images/wow.png"
               language="typescript"
             />
             <SmallProject
+              href="/fog"
               name="Fog"
               description="Web Development"
               image="/projects-images/fog.png"
@@ -92,12 +45,14 @@ const Projects = () => {
           </div>
           <div className={"w-[820px] h-[1200px] flex flex-col gap-5"}>
             <LargeProject
+              href="/wowdeathbets"
               name="WowDeathBets"
               description="Web Development"
               image="/projects-images/wowdeathbets.png"
               language="typescript"
             />
             <LargeProject
+              href="/poke-battle"
               name="Poke Battle"
               description="Machine Learning / Web Development"
               image="/projects-images/pokebattle.png"
@@ -106,18 +61,21 @@ const Projects = () => {
           </div>
           <div className={"w-[400px] h-auto flex flex-col gap-5"}>
             <SmallProject
+              href="/fishing-friend"
               name="Fishing Friend"
               description="Bot"
               image="/projects-images/fishingfriend.png"
               language="java"
             />
             <SmallProject
+              href="/tagfat"
               name="Tagfat"
               description="Web Development"
               image="/projects-images/tagfat.png"
               language="typescript"
             />
             <SmallProject
+              href="/velkoz"
               name="Velkoz"
               description="Web Development"
               image="/projects-images/velkoz.png"
@@ -135,14 +93,15 @@ interface ProjectProps {
   description: string;
   image: string;
   language: string;
+  href: string;
 }
 
 const SmallProject = (props: ProjectProps) => {
-  const { name, description, image, language } = props;
+  const { name, description, image, language, href } = props;
 
   return (
     <Link
-      href={`/${name.toLowerCase().replace(" ", "-")}`}
+      href={href}
       className={"md:w-[400px] w-full h-96 flex flex-col cursor-pointer group"}
     >
       <div className={"h-3/4 relative overflow-hidden"}>
@@ -190,11 +149,11 @@ const SmallProject = (props: ProjectProps) => {
 };
 
 const LargeProject = (props: ProjectProps) => {
-  const { name, description, image, language } = props;
+  const { name, description, image, language, href } = props;
 
   return (
     <Link
-      href={`/${name.toLowerCase().replace(" ", "-")}`}
+      href={href}
       className={
         "w-[820px] h-[600px] flex flex-col cursor-pointer group col-span-2 row-span-2"
       }
