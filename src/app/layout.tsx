@@ -26,7 +26,7 @@ export default function RootLayout({
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </head>
       <body>
-        <main className={lato.className}>
+        <main className={lato.className + " bg-[#0d1117]"}>
           <div className={"sticky top-0 z-20"}>
             <Navbar />
           </div>

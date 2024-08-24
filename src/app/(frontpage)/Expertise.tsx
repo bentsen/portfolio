@@ -31,7 +31,7 @@ const Expertise = () => {
                   <p>
                     I feel at home in the React ecosystem. It fits my thought
                     process and work process perfectly. I primarily use the
-                    frameworks NextJS.
+                    frameworks NextJS. I have and can also work with Angular.
                   </p>
                 </div>
               </div>
@@ -155,7 +155,7 @@ const ExpertisePanel = ({ children }: { children: React.ReactNode }) => {
   return (
     <div
       className={
-        "md:w-1/3 h-auto border-y-2 border-x md:border-r-0 md:first:border-l-2 md:last:border-r-2 border-neutral-700 p-5 md:pt-10 md:pb-10"
+        "md:w-1/3 h-auto border-y-2 border-x md:border-r-0 md:first:border-l-2 md:last:border-r-2 border-[#30363d] p-5 md:pt-10 md:pb-10"
       }
     >
       {children}

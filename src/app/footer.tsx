@@ -3,14 +3,20 @@ import Image from "next/image";
 
 const Footer = () => {
   return (
-    <div className="h-56 bg-zinc-900 flex flex-col items-center justify-center">
+    <div className="h-56 bg-[#010409] flex flex-col items-center justify-center">
       <div className="w-full md:max-w-[1136px] block">
         <section>
           <footer className="grid grid-cols-4 pb-[calc(64px * 1)] gap-y-[calc(12px * 1)] gap-x-[calc(40px * 1)] auto-cols-auto">
             <div className="text-zinc-400">
               <Link className="block no-underline outline-0 " href={"/"}>
-                <div className="inline-flex items-center">
-                  <Image src={"/logo.png"} alt="logo" width={40} height={4} />
+                <div className="inline-flex items-center gap-2">
+                  <Image
+                    className="rounded"
+                    src={"/logo.png"}
+                    alt="logo"
+                    width={40}
+                    height={4}
+                  />
                   Mikkel Bentsen
                 </div>
               </Link>

@@ -1,13 +1,13 @@
 const Contact = () => {
   return (
-    <div className={"pt-24"}>
+    <div className={""}>
       <div className={"mx-auto my-0 md:w-[1333px] flex flex-col items-center"}>
         <h1 className="text-white text-6xl">Contact</h1>
         <div className="relative flex items-top justify-center sm:items-center sm:pt-0">
           <div className="max-w-6xl mx-auto sm:px-6 lg:px-8">
             <div className="mt-8 overflow-hidden">
               <div className="grid grid-cols-1 md:grid-cols-2">
-                <div className="p-6 mr-2 bg-bgcolor2 sm:rounded-lg">
+                <div className="p-6 mr-2 bg-[#161b22] sm:rounded-lg border border-[#30363d]">
                   <h1 className="text-4xl sm:text-5xl text-white font-extrabold tracking-tight">
                     Get in touch
                   </h1>
@@ -98,7 +98,7 @@ const Contact = () => {
                       name="name"
                       id="name"
                       placeholder="Full Name"
-                      className="w-100 py-3 px-3 rounded-lg bg-bgcolor2 border border-neutral-800 text-gray-400  font-semibold focus:border-neutral-500 focus:outline-none"
+                      className="w-100 py-3 px-3 rounded-lg bg-[#161b22] border border-[#30363d] text-gray-400  font-semibold focus:border-neutral-500 focus:outline-none"
                     />
                   </div>
 
@@ -111,7 +111,7 @@ const Contact = () => {
                       name="email"
                       id="email"
                       placeholder="Email"
-                      className="w-100 mt-2 py-3 px-3 rounded-lg bg-bgcolor2 border border-neutral-800 text-gray-400  font-semibold focus:border-neutral-500 focus:outline-none"
+                      className="w-100 mt-2 py-3 px-3 rounded-lg bg-[#161b22] border border-[#30363d] text-gray-400  font-semibold focus:border-neutral-500 focus:outline-none"
                     />
                   </div>
 
@@ -124,7 +124,7 @@ const Contact = () => {
                       name="tel"
                       id="tel"
                       placeholder="Telephone Number"
-                      className="w-100 mt-2 py-3 px-3 rounded-lg bg-bgcolor2 border border-neutral-800 text-gray-400  font-semibold focus:border-neutral-500 focus:outline-none"
+                      className="w-100 mt-2 py-3 px-3 rounded-lg bg-[#161b22] border border-[#30363d] text-gray-400  font-semibold focus:border-neutral-500 focus:outline-none"
                     />
                   </div>
 
@@ -136,13 +136,13 @@ const Contact = () => {
                       name="message"
                       id="message"
                       placeholder="Message"
-                      className="w-100 resize-none mt-2 py-3 px-3 rounded-lg bg-bgcolor2 border border-neutral-800 text-gray-400  font-semibold focus:border-neutral-500 focus:outline-none"
+                      className="w-100 resize-none mt-2 py-3 px-3 rounded-lg bg-[#161b22] border border-[#30363d] text-gray-400  font-semibold focus:border-neutral-500 focus:outline-none"
                     />
                   </div>
 
                   <button
                     type="submit"
-                    className="md:w-32 bg-neutral-600 text-white font-bold py-3 px-6 rounded-lg mt-3 hover:bg-neutral-500 transition ease-in-out duration-300"
+                    className="md:w-32 bg-[#292e36] border border-[#30363d] text-white font-bold py-3 px-6 rounded-lg mt-3 hover:bg-neutral-500 transition ease-in-out duration-300"
                   >
                     Submit
                   </button>

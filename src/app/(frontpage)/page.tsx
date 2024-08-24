@@ -24,7 +24,7 @@ const Page = () => {
         <div className="bg-[url('/bg.png')] bg-center bg-cover h-full animate-[pulse_4s_infinite]" />
         <div
           className={
-            "h-full w-full bg-gradient-to-b from-overlay1 to-overlay2 absolute top-0 left-0 pointer-events-none"
+            "h-full w-full bg-gradient-to-b from-[#0d1117]/10 to-[#0d1117] absolute top-0 left-0 pointer-events-none"
           }
         ></div>
         <div className="absolute left-1/2 md:bottom-4 bottom-6">
@@ -43,7 +43,7 @@ const Page = () => {
                 "text-[5vw] md:block hidden text-white font-bold uppercase text-center"
               }
             >
-              Hey, i&apos;m Mikkel Bentsen
+              Hey, i&apos;am Mikkel Bentsen
             </h1>
             <h1 className="text-4xl md:hidden text-white font-bold uppercase text-center">
               Mikkel Bentsen
@@ -63,23 +63,7 @@ const Page = () => {
         id={"expertise"}
         className={"md:h-screen h-auto"}
       >
-        <div className={"h-full relative"}>
-          <div
-            className={
-              "h-1/2 w-full bg-gradient-to-t from-overlay1 to-overlay2 absolute top-0 left-0 pointer-events-none -z-10"
-            }
-          ></div>
-          <Image
-            className={"absolute left-0 top-0 -z-20 opacity-90"}
-            src={"/binary.png"}
-            alt={"binary"}
-            fill
-          />
-          <div
-            className={
-              "h-1/2 w-full bg-gradient-to-b from-overlay1 to-overlay2 absolute top-[50%] left-0 pointer-events-none -z-10"
-            }
-          ></div>
+        <div className={"h-full"}>
           <Expertise />
         </div>
       </section>
@@ -88,7 +72,7 @@ const Page = () => {
           <Projects />
         </div>
       </section>
-      <section className="pb-32" id="contact">
+      <section className="py-48" id="contact">
         <Contact />
       </section>
     </div>
